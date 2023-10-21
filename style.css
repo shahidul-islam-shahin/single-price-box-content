@@ -1,0 +1,142 @@
+.section-bg-1 { 
+    background-image: url(sky-img.jpg);
+}
+
+.section-padding {
+    position: relative;
+    background-size: cover;
+    background-position: center top;
+    padding: 100px 0;
+}
+
+.section-padding,.section-bg-1 {
+    background-attachment: fixed;
+}
+
+.single-price-box {
+    position: relative;
+    float: left;
+    width: 33.33%;
+}
+
+.single-price-box::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    content: "";
+    background-color: #333;
+    opacity: .2;
+}
+
+.single-price-box:last-child::after {
+    display: none;
+}
+
+.price-boxes {
+    box-shadow: 0 0 30px #555;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.single-price-box:last-child {
+    border: none;
+}
+
+.price-box-img-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+}
+
+.price-box-image {
+    display: table;
+    width: 100%;
+}
+
+.price-box-inner {
+    background-color:#fff;
+    padding: 30px;
+    color: #3c76c0;
+    text-align: center;
+}
+
+.price-box-inner h2 {
+    text-align: center;
+    font-weight: 900;
+    color: #3c76c0;
+    position: relative;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.price-box-inner h2::after{
+    position: absolute;
+    bottom: -30%;
+    left: 43%;
+    width: 25px;
+    height: 3px;
+    background-color: #3c76c0;
+    content: "";
+    border-radius: 5px;
+}
+
+.price-content span {
+    display: inline-block;
+    position: relative;
+    color: #d25529;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.price-content span::before {
+    content: "$";
+    font-size: 24px;
+    position: absolute;
+    left: -15px;
+    top: -7px;
+    font-weight: 700;
+}
+
+
+.price-content span::after {
+    content: "/mo";
+    font-weight: 500;
+    font-size: 23px;
+    margin-left: 4px;
+}
+
+.price-box-inner h3 {
+    text-align: center;
+    padding-left: 15px;
+}
+
+.price-box-inner ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 28px;
+    font-size: 15px;
+    padding-left: 45px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.boxed-btn {
+    display: inline-block;
+    background-color: #3c76c0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+.active {
+    background-color: #d25529;
+}
